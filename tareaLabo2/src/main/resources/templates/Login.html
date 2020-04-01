@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmins:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Inicio de Sesion</h1>
+	
+	<form action="#" th:action="@{/validacion}" th:object="${user}" method="post">
+	
+		<p>
+			Usuario: <input type="text" th:field="*{user}" placeholder="mario">
+		</p>
+		<p>
+			Contraseña: <input type="password" th:field="*{password}" placeholder="12345678">
+		</p>
+		<p>
+			<input type="submit" value="Enviar"/> <input type="reset" value="Borrar">
+		</p>
+	</form>
+</body>
+</html>
